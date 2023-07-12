@@ -32,10 +32,6 @@ body {
   gap: 50px;
 }
 
-.logo-image {
-  margin-top: 30px;
-}
-
 .global-container {
   max-width: 1000px;
   background-color: white;
@@ -213,6 +209,9 @@ body {
   .global-container .results-container {
     width: 100%;
   }
+  .logo-image {
+  margin-top: 30px;
+}
 }
 
 @media only screen and (max-width: 480px) {
