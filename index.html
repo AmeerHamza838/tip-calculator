@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>
+      SPLI <br />
+      TTER
+    </h1>
+    <main class="global-container">
+      <div class="inputs-container">
+        <div class="input-section bill-section">
+          <p class="input-label">Bill</p>
+          <input
+            placeholder="0"
+            class="bill-input"
+            type="text"
+            name="bill"
+            id="bill"
+            inputmode="numeric"
+          />
+        </div>
+        <div class="input-section tips-section">
+          <p class="input-label">Select Tip %</p>
+          <div class="tips-container">
+            <p class="tip">5%</p>
+            <p class="tip">10%</p>
+            <p class="tip">15%</p>
+            <p class="tip">25%</p>
+            <p class="tip">50%</p>
+            <input
+              type="text"
+              name="costum-tip"
+              id="custum-tip"
+              class="custom-tip"
+              placeholder="Custom"
+            />
+          </div>
+        </div>
+        <div class="input-section people-section">
+          <div class="people-label">
+            <p class="input-label">Number of People</p>
+            <p class="error-message">can't be zero</p>
+          </div>
+          <input
+            placeholder="0"
+            class="people-input"
+            type="number"
+            name="people"
+            id="people"
+          />
+        </div>
+      </div>
+      <div class="results-container">
+        <div class="result-section tip-amount">
+          <div class="title">
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <p class="result tip-result">$0.00</p>
+        </div>
+        <div class="result-section total">
+          <div class="title">
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <p class="result total-result">$0.00</p>
+        </div>
+        <button class="reset-button">RESET</button>
+      </div>
+    </main>
+  </body>
+</html>
