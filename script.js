@@ -47,7 +47,7 @@ tipsContainer.addEventListener("click", function (e) {
     const tipAmount = ((bill * tip) / (nbPeople * 100)).toFixed(2);
     tipResultFeild.textContent = tipAmount;
     // callculate the total:
-    const total = (Number(bill) + Number(tipAmount)).toFixed(2);
+    const total = ((Number(bill)/nbPeople) + Number(tipAmount)).toFixed(2);
     totalResultFeild.textContent = total;
   }
 });
